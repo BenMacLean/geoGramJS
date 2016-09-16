@@ -23,7 +23,7 @@
     "rewriteTsconfig": true
   },
   "files": [
-    "./dev/app.component.ts",
+    "./dev/app/app.component.ts",
     "./dev/boot.ts",
     "./dev/geoGram.service.ts",
     "./dev/geoGram.ts",
