@@ -4,13 +4,13 @@ import {Observable} from "rxjs/Observable";
 import {Http} from "angular2/http";
 import 'rxjs/Rx';
 @Injectable()
-export class WeatherService {
+export class geoGramJS {
 
     constructor(private _http: Http) { }
 
-    // getLocationItems() {
-    //     return LOCATION;
-    // }
+    getLocationItems() {
+        return "hello";
+    }
 
 
     searchLocationData(cityName: string): Observable<any> {
