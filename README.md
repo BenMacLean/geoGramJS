@@ -1,5 +1,6 @@
-# Angular 2 Weather App (Tutorial)
+# geoGramJS
 
 ## Description
-This repository holds the source code of my YouTube Tutorial series on how to build an Angular 2 Weather App.
-# weatherAppFromMax
+A JS app for location specific Instagram posts.
+
+#Under Construction
