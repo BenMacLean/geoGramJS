@@ -24,6 +24,9 @@
   },
   "files": [
     "./dev/app.component.ts",
-    "./dev/boot.ts"
+    "./dev/boot.ts",
+    "./dev/geoGram.service.ts",
+    "./dev/geoGram.ts",
+    "./dev/location.data.ts"
   ]
 }
