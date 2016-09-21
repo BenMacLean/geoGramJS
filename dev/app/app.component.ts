@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {geoGramJS} from "../geoGram.service";
+import {Google} from "../google.service";
 
 @Component({
     selector: 'my-app',
@@ -18,17 +18,17 @@ import {geoGramJS} from "../geoGram.service";
     </body>
 `,
 
-    providers: [geoGramJS]
+    providers: [Google]
 })
 
 export class AppComponent {
-constructor(private _geoGramJS: geoGramJS) { }
+constructor(private _google: Google) { }
 
   public app ={};
 
   public getData = (app)=>{
       console.log("foooooo");
-      console.log("test", this._geoGramJS.getLocationItems());
+      console.log("test", this._google.getLocationFromString("disneyland,ca"));
 
     console.log(app.location);
   }

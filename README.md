@@ -3,4 +3,4 @@
 ## Description
 A JS app for location specific Instagram posts.
 
-#Under Construction
+#Under Construction/unfinished

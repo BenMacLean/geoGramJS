@@ -4,7 +4,7 @@ import {Observable} from "rxjs/Observable";
 import {Http} from "angular2/http";
 import 'rxjs/Rx';
 @Injectable()
-export class geoGramJS {
+export class Google {
 
     constructor(private _http: Http) { }
 
@@ -13,8 +13,8 @@ export class geoGramJS {
     }
 
 
-    searchLocationData(cityName: string): Observable<any> {
-        return this._http.get('http://maps.googeapis.com/maps/api/geocode/json?address=' + cityName + '&APPID=90a335d103bc0c34332a9b97640be0ec&units=metric')
+    getLocationFromString(cityName: string): Observable<any> {
+        return this._http.get('http://maps.googeapis.com/maps/api/geocode/json?address=' + cityName)
           .map(response => response.json())
               .catch(error => {
                   console.error(error);
